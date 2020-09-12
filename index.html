@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Web Mapping Course Practice">
+    <meta name="keywords" content="CSUN, Maps, Leaflet API">
+    <meta name="author" content="Dr. S. Boroushaki">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--import favicon -->
+    <link rel="shortcut icon" href="img/harvest.png" type="image/x-icon">
+
+    <!--import CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/L.Control.Sidebar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+    <title>Final Project</title>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-warning col-8 offset-2">
+                <link rel="shortcut icon" href="img/harvest.png" type="image/x-icon">
+                <a class="navbar-brand" id="aNav" href="#">Web-Mapping</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="info" href="#"> <b>Original Data</b></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="about" href="#">About</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+        <!-- Row 1 -->
+        <div class="row">
+            <div id="myMap" class="col-8 offset-2"></div>
+            <div id="sidebar">
+                <h1> <b>Food Distribution within groundwater basins</b></h1>
+                <p> Hello, my name is Luis Garcia and I'm a Geography major emphasizing in GIS with a huge interest in anything to do with Agriculture, farmers' markets, and food waste. This project entails looking at agricultural crops differently in California, by looking at it from a ground water perspective. The point of the project is to click on any sub ground water basin feature and you'll get the distribution of crops. However before anything, it should NOT be assumed that the crops located within these sub ground water basins are using that exact same water they are located in, as the crops might use water that may be located from different regions.</p>
+                <div id="piechart" style="width: 900px; height: 500px;" position="fixed"></div>
+            </div>
+        </div>
+        <!-- Row 2 -->
+
+    </div>
+    <!-- ContainerFluid -->
+
+    <!--import JavaScript-->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS , and finally your own JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Add Leaflet JS here-->
+    <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <!--Google Charts- internal-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!--Add your own JavaScript here - internal-->
+    <script type="text/javascript" src="JS/ArcMap_Sample.js"></script>
+    <script type="text/javascript" src="JS/GCS_JoinedCr.js"></script>
+    <script type="text/javascript" src="JS/GCS_GroundWater.js"></script>
+    <script type="text/javascript" src="JS/L.Control.Sidebar.js"></script>
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* ----------------- Custom Styles ----------------- */
+
+/* ----------------- Dr S. Boroushaki ----------------- */
+
+body * {
+
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#myMap {
+
+    height: 800px;
+    margin-top: 10px;
+    border: 1px solid #6C757D;
+}
+
+#aCustomC {
+
+    color: #e8e8e8;
+    background: rgba(8, 24, 212, 0.75);
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+#nArrow {
+
+    color: #e8e8e8;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
